@@ -1,0 +1,17 @@
+<html>
+<body>
+<div>
+    <form method="get">
+        <input type="date" name="current_start_date" value={{current_start_date}}>
+        <input type="date" name="current_finish_date" value={{current_finish_date}}>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% if result %}
+<br>
+<div>
+    {{result}}
+</div>
+{% endif %}
+</body>
+</html>
