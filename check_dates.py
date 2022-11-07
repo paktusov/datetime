@@ -15,5 +15,4 @@ def check_dates(current_start_date, current_finish_date):
             start_date, finish_date = map(dt.date.fromisoformat, date)
         if not (current_finish_date < start_date or current_start_date > finish_date):
             return "Busy"
-    else:
-        return "Available"
+    return "Available"
